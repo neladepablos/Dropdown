@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+
+a {
+    color: #d93;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: all .5s ease-in;
+}
+
+a:last-child {
+    margin-right: 0;
+}
+
+a:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background: #d93;
+    border: 6px solid brown;
+    
+}
+
+ul li {
+  
+    padding: 25PX;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li:hover {
+    background: black;
+    color: #FFF;
+    cursor: pointer;
+    
+}
+
+.header, 
+.footer {
+    /* background: blue; */
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    color: chocolate;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.header .logo img {
+    width: 150px;
+    height: 100px;
+}
+
+/*------------------------------------------------- main*/
+.main {
+    margin-bottom: 90px;
+}
+.main .principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------- SECTION ------*/
+
+.main .dropdown {
+    margin: 70px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    display: inline-block;
+    
+    
+}
+
+.dropdown.is-active ul {
+    display: block;
+}
+
+.dropdown button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.dropdown .contenido {
+    /* background: chocolate; */
+    /* border: 6px solid brown; */
+    border-left: 6px solid brown;
+    
+}
+
+/* --------------------------------------------------- SECTION ------*/
+
+.footer p {
+    font-size: 30px;
+}
+
+
+
+
